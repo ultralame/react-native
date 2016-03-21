@@ -116,7 +116,7 @@ var TouchableBounce = React.createClass({
     return (
       <Animated.View
         style={[{transform: [{scale: this.state.scale}]}, this.props.style]}
-        accessible={true}
+        accessible = {this.props.accessible !== false}
         accessibilityLabel={this.props.accessibilityLabel}
         accessibilityComponentType={this.props.accessibilityComponentType}
         accessibilityTraits={this.props.accessibilityTraits}
